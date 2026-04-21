@@ -6,7 +6,7 @@ function Navbar() {
     <BsNavbar bg="white" expand="lg" sticky="top" className="navbar" as="header" role="banner">
       <Container fluid className="navbar-container">
         <BsNavbar.Brand as={Link} to="/" className="navbar-logo" aria-label="Foodie Diw&Co - Ir a inicio">
-          <img src="/assets/logo.png" className="navbar-logo-img" alt="" aria-hidden="true" />
+          <img src="/assets/logo.avif" className="navbar-logo-img" alt="" aria-hidden="true" />
           Foodie Diw&amp;Co
         </BsNavbar.Brand>
 

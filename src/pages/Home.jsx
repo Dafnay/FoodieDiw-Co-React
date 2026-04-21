@@ -1,10 +1,12 @@
-import Map from '../components/shared/Map'
+import { lazy, Suspense } from 'react'
+
+const Map = lazy(() => import('../components/shared/Map'))
 
 function Home() {
   return (
     <>
       <section className="banner">
-        <img src="/assets/banner.jpg" alt="Banner" className="banner-img" />
+        <img src="/assets/banner.avif" alt="Banner" className="banner-img" width="1066" height="400" />
         <div className="banner-text">
           <h1>Descubre los mejores sabores en un solo lugar</h1>
         </div>
@@ -13,32 +15,32 @@ function Home() {
       <section className="categories">
         <a href="/starters" className="category-bubble">
           <div className="bubble-circle">
-            <img src="/assets/entrantes.jpg" alt="Entrantes" />
+            <img src="/assets/entrantes.avif" alt="Entrantes" width="300" height="200" />
           </div>
           <h3>Entrantes</h3>
         </a>
         <a href="/mains" className="category-bubble">
           <div className="bubble-circle">
-            <img src="/assets/principales.jpg" alt="Principales" />
+            <img src="/assets/principales.avif" alt="Principales" width="356" height="200" />
           </div>
           <h3>Principales</h3>
         </a>
         <a href="/desserts" className="category-bubble">
           <div className="bubble-circle">
-            <img src="/assets/postres.jpg" alt="Postres" />
+            <img src="/assets/postres.avif" alt="Postres" width="300" height="200" />
           </div>
           <h3>Postres</h3>
         </a>
         <a href="/drinks" className="category-bubble">
           <div className="bubble-circle">
-            <img src="/assets/bebidas.jpg" alt="Bebidas" />
+            <img src="/assets/bebidas.avif" alt="Bebidas" width="240" height="240" />
           </div>
           <h3>Bebidas</h3>
         </a>
       </section>
 
       <section className="delivery">
-        <img src="/assets/delivery.png" alt="Delivery" className="delivery-img" />
+        <img src="/assets/delivery.avif" alt="Delivery" className="delivery-img" width="400" height="400" />
         <div className="delivery-content">
           <h2>Pide a Domicilio</h2>
           <p>Recibe tus platos favoritos en la puerta de tu casa</p>
@@ -61,7 +63,9 @@ function Home() {
             </div>
           </div>
           <div className="visit-map">
-            <Map />
+            <Suspense fallback={<div style={{ height: '400px', background: '#f0f0f0', borderRadius: '8px' }} />}>
+              <Map />
+            </Suspense>
           </div>
         </div>
       </section>
