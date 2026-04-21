@@ -19,7 +19,7 @@ function Mains() {
       <section className="menu-items">
         <div className="menu-item">
           <div className="menu-item-image">
-            <img src="/assets/principal1.jpg" alt="Plato Principal" />
+            <img src="/assets/principal1.avif" alt="Plato Principal" />
           </div>
           <div className="menu-item-info">
             <h3>Paella Valenciana</h3>
@@ -40,7 +40,7 @@ function Mains() {
 
         <div className="menu-item">
           <div className="menu-item-image">
-            <img src="/assets/principal2.jpg" alt="Plato Principal" />
+            <img src="/assets/principal2.avif" alt="Plato Principal" />
           </div>
           <div className="menu-item-info">
             <h3>Solomillo al Roquefort</h3>
@@ -61,7 +61,7 @@ function Mains() {
 
         <div className="menu-item">
           <div className="menu-item-image">
-            <img src="/assets/principal3.jpg" alt="Plato Principal" />
+            <img src="/assets/principal3.avif" alt="Plato Principal" />
           </div>
           <div className="menu-item-info">
             <h3>Merluza a la Vasca</h3>
@@ -82,7 +82,7 @@ function Mains() {
 
         <div className="menu-item">
           <div className="menu-item-image">
-            <img src="/assets/principal4.jpg" alt="Plato Principal" />
+            <img src="/assets/principal4.avif" alt="Plato Principal" />
           </div>
           <div className="menu-item-info">
             <h3>Lasaña Casera</h3>
@@ -103,7 +103,7 @@ function Mains() {
 
         <div className="menu-item">
           <div className="menu-item-image">
-            <img src="/assets/principal5.jpg" alt="Plato Principal" />
+            <img src="/assets/principal5.avif" alt="Plato Principal" />
           </div>
           <div className="menu-item-info">
             <h3>Cordero Asado</h3>
@@ -124,7 +124,7 @@ function Mains() {
 
         <div className="menu-item">
           <div className="menu-item-image">
-            <img src="/assets/principal6.jpg" alt="Plato Principal" />
+            <img src="/assets/principal6.avif" alt="Plato Principal" />
           </div>
           <div className="menu-item-info">
             <h3>Risotto de Setas</h3>

@@ -19,7 +19,7 @@ function Desserts() {
       <section className="menu-items">
         <div className="menu-item">
           <div className="menu-item-image">
-            <img src="/assets/postre1.jpg" alt="Postre" />
+            <img src="/assets/postre1.avif" alt="Postre" />
           </div>
           <div className="menu-item-info">
             <h3>Tarta de Queso</h3>
@@ -40,7 +40,7 @@ function Desserts() {
 
         <div className="menu-item">
           <div className="menu-item-image">
-            <img src="/assets/postre2.jpg" alt="Postre" />
+            <img src="/assets/postre2.avif" alt="Postre" />
           </div>
           <div className="menu-item-info">
             <h3>Tiramisú Italiano</h3>
@@ -61,7 +61,7 @@ function Desserts() {
 
         <div className="menu-item">
           <div className="menu-item-image">
-            <img src="/assets/postre3.jpg" alt="Postre" />
+            <img src="/assets/postre3.avif" alt="Postre" />
           </div>
           <div className="menu-item-info">
             <h3>Brownie con Helado</h3>
@@ -82,7 +82,7 @@ function Desserts() {
 
         <div className="menu-item">
           <div className="menu-item-image">
-            <img src="/assets/postre4.jpg" alt="Postre" />
+            <img src="/assets/postre4.avif" alt="Postre" />
           </div>
           <div className="menu-item-info">
             <h3>Flan Casero</h3>
@@ -103,7 +103,7 @@ function Desserts() {
 
         <div className="menu-item">
           <div className="menu-item-image">
-            <img src="/assets/postre5.jpg" alt="Postre" />
+            <img src="/assets/postre5.avif" alt="Postre" />
           </div>
           <div className="menu-item-info">
             <h3>Tarta de Chocolate</h3>

@@ -8,13 +8,13 @@ function AboutUs() {
           <p>Creemos en la cocina como una forma de arte y expresión cultural, donde cada plato cuenta una historia y cada ingrediente tiene un propósito especial.</p>
         </div>
         <div className="about-image">
-          <img src="/assets/team-hands.jpg" alt="Nuestra cocina" />
+          <img src="/assets/team-hands.avif" alt="Nuestra cocina" />
         </div>
       </section>
 
       <section className="about-special">
         <div className="about-image">
-          <img src="/assets/chef.jpg" alt="Lo que nos hace especiales" />
+          <img src="/assets/chef.avif" alt="Lo que nos hace especiales" />
         </div>
         <div className="about-text">
           <h2>Lo que nos hace especiales</h2>

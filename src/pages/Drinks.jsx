@@ -19,7 +19,7 @@ function Drinks() {
       <section className="menu-items">
         <div className="menu-item">
           <div className="menu-item-image">
-            <img src="/assets/bebida1.jpg" alt="Bebida" />
+            <img src="/assets/bebida1.avif" alt="Bebida" />
           </div>
           <div className="menu-item-info">
             <h3>Vino Tinto Reserva</h3>
@@ -40,7 +40,7 @@ function Drinks() {
 
         <div className="menu-item">
           <div className="menu-item-image">
-            <img src="/assets/bebida2.jpg" alt="Bebida" />
+            <img src="/assets/bebida2.avif" alt="Bebida" />
           </div>
           <div className="menu-item-info">
             <h3>Cerveza Artesanal</h3>
@@ -61,7 +61,7 @@ function Drinks() {
 
         <div className="menu-item">
           <div className="menu-item-image">
-            <img src="/assets/bebida3.jpg" alt="Bebida" />
+            <img src="/assets/bebida3.avif" alt="Bebida" />
           </div>
           <div className="menu-item-info">
             <h3>Zumo Natural</h3>
@@ -82,7 +82,7 @@ function Drinks() {
 
         <div className="menu-item">
           <div className="menu-item-image">
-            <img src="/assets/bebida4.jpg" alt="Bebida" />
+            <img src="/assets/bebida4.avif" alt="Bebida" />
           </div>
           <div className="menu-item-info">
             <h3>Sangría de la Casa</h3>
@@ -103,7 +103,7 @@ function Drinks() {
 
         <div className="menu-item">
           <div className="menu-item-image">
-            <img src="/assets/bebida5.jpg" alt="Bebida" />
+            <img src="/assets/bebida5.avif" alt="Bebida" />
           </div>
           <div className="menu-item-info">
             <h3>Agua Mineral</h3>

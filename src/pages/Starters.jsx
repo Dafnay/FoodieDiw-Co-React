@@ -19,7 +19,7 @@ function Starters() {
       <section className="menu-items">
         <div className="menu-item">
           <div className="menu-item-image">
-            <img src="/assets/entrante1.jpg" alt="Entrante" />
+            <img src="/assets/entrante1.avif" alt="Entrante" />
           </div>
           <div className="menu-item-info">
             <h3>Croquetas Caseras</h3>
@@ -40,7 +40,7 @@ function Starters() {
 
         <div className="menu-item">
           <div className="menu-item-image">
-            <img src="/assets/entrante2.jpg" alt="Entrante" />
+            <img src="/assets/entrante2.avif" alt="Entrante" />
           </div>
           <div className="menu-item-info">
             <h3>Ensalada de la Huerta</h3>
@@ -61,7 +61,7 @@ function Starters() {
 
         <div className="menu-item">
           <div className="menu-item-image">
-            <img src="/assets/entrante3.jpg" alt="Entrante" />
+            <img src="/assets/entrante3.avif" alt="Entrante" />
           </div>
           <div className="menu-item-info">
             <h3>Tabla de Quesos</h3>
@@ -82,7 +82,7 @@ function Starters() {
 
         <div className="menu-item">
           <div className="menu-item-image">
-            <img src="/assets/entrante4.jpg" alt="Entrante" />
+            <img src="/assets/entrante4.avif" alt="Entrante" />
           </div>
           <div className="menu-item-info">
             <h3>Gazpacho Andaluz</h3>
