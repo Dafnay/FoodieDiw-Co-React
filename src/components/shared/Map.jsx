@@ -16,7 +16,7 @@ const position = [43.3614, -5.8490]
 
 function Map() {
   return (
-    <MapContainer center={position} zoom={15} style={{ width: '100%', height: '400px', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+    <MapContainer center={position} zoom={15} style={{ width: '100%', height: '350px', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

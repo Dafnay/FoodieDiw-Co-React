@@ -1,4 +1,6 @@
 import { lazy, Suspense } from 'react'
+import CategoryBubble from '../components/CategoryBubble'
+import ImageTextSection from '../components/shared/ImageTextSection'
 
 const Map = lazy(() => import('../components/shared/Map'))
 
@@ -13,62 +15,47 @@ function Home() {
       </section>
 
       <section className="categories">
-        <a href="/starters" className="category-bubble">
-          <div className="bubble-circle">
-            <img src="/assets/entrantes.avif" alt="Entrantes" width="300" height="200" />
-          </div>
-          <h3>Entrantes</h3>
-        </a>
-        <a href="/mains" className="category-bubble">
-          <div className="bubble-circle">
-            <img src="/assets/principales.avif" alt="Principales" width="356" height="200" />
-          </div>
-          <h3>Principales</h3>
-        </a>
-        <a href="/desserts" className="category-bubble">
-          <div className="bubble-circle">
-            <img src="/assets/postres.avif" alt="Postres" width="300" height="200" />
-          </div>
-          <h3>Postres</h3>
-        </a>
-        <a href="/drinks" className="category-bubble">
-          <div className="bubble-circle">
-            <img src="/assets/bebidas.avif" alt="Bebidas" width="240" height="240" />
-          </div>
-          <h3>Bebidas</h3>
-        </a>
+        <CategoryBubble href="/starters" img="/assets/entrantes.avif" label="Entrantes" imgAlt="Croquetas caseras de jamón" />
+        <CategoryBubble href="/mains" img="/assets/principales.avif" label="Principales" imgAlt="Plato de paella valenciana" />
+        <CategoryBubble href="/desserts" img="/assets/postres.avif" label="Postres" imgAlt="Tarta de queso con frutos rojos" />
+        <CategoryBubble href="/drinks" img="/assets/bebidas.avif" label="Bebidas" imgAlt="Variedad de bebidas y cócteles" />
       </section>
 
-      <section className="delivery">
-        <img src="/assets/delivery.avif" alt="Delivery" className="delivery-img" width="400" height="400" />
-        <div className="delivery-content">
-          <h2>Pide a Domicilio</h2>
-          <p>Recibe tus platos favoritos en la puerta de tu casa</p>
-        </div>
-      </section>
+      <ImageTextSection
+        img="/assets/delivery.avif"
+        imgAlt="Delivery"
+        title="Pide a Domicilio"
+        compact
+      >
+        <p>Recibe tus platos favoritos en la puerta de tu casa. Entrega en menos de 45 minutos.</p>
+        <ul>
+          <li>Packaging sostenible</li>
+          <li>Seguimiento en tiempo real</li>
+        </ul>
+      </ImageTextSection>
 
-      <section className="visit">
-        <div className="visit-wrapper">
-          <div className="visit-content">
-            <h2>Visítanos en...</h2>
-            <div className="visit-address">
-              <p><strong>Dirección:</strong></p>
-              <p>Calle Principal 123</p>
-              <p>33001 Oviedo, Asturias</p>
-            </div>
-            <div className="visit-schedule">
-              <p><strong>Horario:</strong></p>
-              <p>Lunes - Viernes: 14:00 - 22:00</p>
-              <p>Sábados: 13:00 - 22:00</p>
-            </div>
-          </div>
-          <div className="visit-map">
-            <Suspense fallback={<div style={{ height: '400px', background: '#f0f0f0', borderRadius: '8px' }} />}>
-              <Map />
-            </Suspense>
-          </div>
+      <ImageTextSection
+        title="Visítanos en..."
+        imgRight
+        bg="#f9f9f9"
+        media={
+          <Suspense fallback={<div style={{ height: '400px', background: '#f0f0f0', borderRadius: '8px', width: '100%' }} />}>
+            <Map />
+          </Suspense>
+        }
+      >
+        <div className="mt-3">
+          <p><strong>Dirección:</strong></p>
+          <p>Calle Principal 123</p>
+          <p>33001 Oviedo, Asturias</p>
         </div>
-      </section>
+        <hr />
+        <div>
+          <p><strong>Horario:</strong></p>
+          <p>Lunes - Viernes: 14:00 - 22:00</p>
+          <p>Sábados: 13:00 - 22:00</p>
+        </div>
+      </ImageTextSection>
     </>
   )
 }
