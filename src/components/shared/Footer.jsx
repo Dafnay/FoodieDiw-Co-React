@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -10,13 +11,13 @@ function Footer() {
         <Row className="align-items-center">
           <Col xs={12} md={6} className="text-center text-md-start mb-3 mb-md-0">
             <h3>Foodie Diw&amp;Co</h3>
-            <p className="text-secondary mb-0">&copy; 2025 Todos los derechos reservados</p>
+            <p className="mb-0" style={{ color: '#aaa' }}>&copy; 2025 Todos los derechos reservados</p>
           </Col>
           <Col xs={12} md={6}>
             <Nav className="justify-content-center justify-content-md-end gap-3">
-              <Nav.Link href="/contact" className="text-white p-0">Contacto</Nav.Link>
-              <Nav.Link href="/about-us" className="text-white p-0">Sobre Nosotros</Nav.Link>
-              <Nav.Link href="/faqs" className="text-white p-0">FAQs</Nav.Link>
+              <Nav.Link as={Link} to="/contact" className="text-white p-0">Contacto</Nav.Link>
+              <Nav.Link as={Link} to="/about-us" className="text-white p-0">Sobre Nosotros</Nav.Link>
+              <Nav.Link as={Link} to="/faqs" className="text-white p-0">FAQs</Nav.Link>
             </Nav>
           </Col>
         </Row>
