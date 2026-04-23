@@ -4,7 +4,7 @@ function CategoryBubble({ href, img, label, imgAlt }) {
       <div className="bubble-circle">
         <img src={img} alt={imgAlt} />
       </div>
-      <h3>{label}</h3>
+      <h2>{label}</h2>
     </a>
   )
 }

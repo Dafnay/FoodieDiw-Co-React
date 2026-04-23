@@ -42,7 +42,7 @@
     border-radius: 50%;
 }
 
-.category-bubble h3 {
+.category-bubble h2 {
     margin-top: 15px;
     font-size: 18px;
     color: #333;
@@ -62,7 +62,7 @@
     }
 
 
-    .category-bubble h3 {
+    .category-bubble h2 {
         font-size: 16px;
     }
 }
