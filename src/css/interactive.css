@@ -1,45 +1,35 @@
-/* JQUERY UI MENU — navegación entre categorías del menu */
-
-#menu-category-nav.ui-menu {
+.menu-category-nav {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    border: none;
-    background: transparent;
+    list-style: none;
     padding: 0;
-    width: auto;
-    font-family: Arial, sans-serif;
-    box-shadow: none;
+    margin: 0;
 }
 
-#menu-category-nav.ui-menu .ui-menu-item {
-    width: auto;
-    float: none;
+.menu-category-nav li {
     background: #fff;
     border: 2px solid #9c27b0;
     border-radius: 8px;
 }
 
-#menu-category-nav.ui-menu .ui-menu-item .ui-menu-item-wrapper {
+.menu-category-nav li a {
+    display: block;
     color: #9c27b0;
     font-weight: 600;
     font-size: 14px;
     padding: 8px 18px;
     border-radius: 6px;
-    border: none;
-    display: block;
+    text-decoration: none;
     transition: background 0.25s, color 0.25s;
 }
 
-#menu-category-nav.ui-menu .ui-menu-item .ui-menu-item-wrapper.ui-state-active,
-#menu-category-nav.ui-menu .ui-menu-item .ui-menu-item-wrapper:hover {
+.menu-category-nav li a:hover {
     background: #9c27b0;
     color: #fff;
-    margin: 0;
-    border-radius: 6px;
 }
 
-#menu-category-nav.ui-menu .ui-menu-item.current-page .ui-menu-item-wrapper {
+.menu-category-nav li.current-page a {
     background: #9c27b0;
     color: #fff;
     pointer-events: none;

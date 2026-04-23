@@ -1,3 +1,6 @@
+import MenuItem from '../components/MenuItem'
+import MenuCategoryNav from '../components/MenuCategoryNav'
+
 function Desserts() {
   return (
     <>
@@ -6,142 +9,15 @@ function Desserts() {
         <p>El dulce final perfecto para tu comida</p>
       </section>
 
-      <div className="menu-category-nav-wrapper">
-        <h4>Explorar categorías</h4>
-        <ul id="menu-category-nav">
-          <li><a href="/starters">Entrantes</a></li>
-          <li><a href="/mains">Principales</a></li>
-          <li className="current-page"><a href="/desserts">Postres</a></li>
-          <li><a href="/drinks">Bebidas</a></li>
-        </ul>
-      </div>
+      <MenuCategoryNav current="/desserts" />
 
       <section className="menu-items">
-        <div className="menu-item">
-          <div className="menu-item-image">
-            <img src="/assets/postre1.avif" alt="Postre" />
-          </div>
-          <div className="menu-item-info">
-            <h3>Tarta de Queso</h3>
-            <p>Cheesecake cremoso con base de galleta y coulis de frutos rojos</p>
-          </div>
-          <div className="menu-item-footer">
-            <span className="price">6,50€</span>
-            <div className="cart-controls">
-              <div className="quantity-selector">
-                <button className="quantity-btn minus-btn" disabled>-</button>
-                <span className="quantity-display">1</span>
-                <button className="quantity-btn plus-btn">+</button>
-              </div>
-              <button className="add-to-cart">Añadir</button>
-            </div>
-          </div>
-        </div>
-
-        <div className="menu-item">
-          <div className="menu-item-image">
-            <img src="/assets/postre2.avif" alt="Postre" />
-          </div>
-          <div className="menu-item-info">
-            <h3>Tiramisú Italiano</h3>
-            <p>Postre tradicional italiano con mascarpone y café</p>
-          </div>
-          <div className="menu-item-footer">
-            <span className="price">7,00€</span>
-            <div className="cart-controls">
-              <div className="quantity-selector">
-                <button className="quantity-btn minus-btn" disabled>-</button>
-                <span className="quantity-display">1</span>
-                <button className="quantity-btn plus-btn">+</button>
-              </div>
-              <button className="add-to-cart">Añadir</button>
-            </div>
-          </div>
-        </div>
-
-        <div className="menu-item">
-          <div className="menu-item-image">
-            <img src="/assets/postre3.avif" alt="Postre" />
-          </div>
-          <div className="menu-item-info">
-            <h3>Brownie con Helado</h3>
-            <p>Brownie de chocolate caliente con helado de vainilla</p>
-          </div>
-          <div className="menu-item-footer">
-            <span className="price">6,00€</span>
-            <div className="cart-controls">
-              <div className="quantity-selector">
-                <button className="quantity-btn minus-btn" disabled>-</button>
-                <span className="quantity-display">1</span>
-                <button className="quantity-btn plus-btn">+</button>
-              </div>
-              <button className="add-to-cart">Añadir</button>
-            </div>
-          </div>
-        </div>
-
-        <div className="menu-item">
-          <div className="menu-item-image">
-            <img src="/assets/postre4.avif" alt="Postre" />
-          </div>
-          <div className="menu-item-info">
-            <h3>Flan Casero</h3>
-            <p>Flan tradicional con caramelo líquido hecho en casa</p>
-          </div>
-          <div className="menu-item-footer">
-            <span className="price">5,00€</span>
-            <div className="cart-controls">
-              <div className="quantity-selector">
-                <button className="quantity-btn minus-btn" disabled>-</button>
-                <span className="quantity-display">1</span>
-                <button className="quantity-btn plus-btn">+</button>
-              </div>
-              <button className="add-to-cart">Añadir</button>
-            </div>
-          </div>
-        </div>
-
-        <div className="menu-item">
-          <div className="menu-item-image">
-            <img src="/assets/postre5.avif" alt="Postre" />
-          </div>
-          <div className="menu-item-info">
-            <h3>Tarta de Chocolate</h3>
-            <p>Tarta de chocolate negro con ganache y decoración de fresas</p>
-          </div>
-          <div className="menu-item-footer">
-            <span className="price">7,50€</span>
-            <div className="cart-controls">
-              <div className="quantity-selector">
-                <button className="quantity-btn minus-btn" disabled>-</button>
-                <span className="quantity-display">1</span>
-                <button className="quantity-btn plus-btn">+</button>
-              </div>
-              <button className="add-to-cart">Añadir</button>
-            </div>
-          </div>
-        </div>
-
-        <div className="menu-item">
-          <div className="menu-item-image">
-            <img src="/assets/postre6.webp" alt="Postre" />
-          </div>
-          <div className="menu-item-info">
-            <h3>Crema Catalana</h3>
-            <p>Crema catalana tradicional con azúcar caramelizado</p>
-          </div>
-          <div className="menu-item-footer">
-            <span className="price">5,50€</span>
-            <div className="cart-controls">
-              <div className="quantity-selector">
-                <button className="quantity-btn minus-btn" disabled>-</button>
-                <span className="quantity-display">1</span>
-                <button className="quantity-btn plus-btn">+</button>
-              </div>
-              <button className="add-to-cart">Añadir</button>
-            </div>
-          </div>
-        </div>
+        <MenuItem img="/assets/postre1.avif" imgAlt="Cheesecake con coulis de frutos rojos" title="Tarta de Queso" description="Cheesecake cremoso con base de galleta y coulis de frutos rojos" price="6,50€" />
+        <MenuItem img="/assets/postre2.avif" imgAlt="Tiramisú italiano con mascarpone" title="Tiramisú Italiano" description="Postre tradicional italiano con mascarpone y café" price="7,00€" />
+        <MenuItem img="/assets/postre3.avif" imgAlt="Brownie de chocolate con helado de vainilla" title="Brownie con Helado" description="Brownie de chocolate caliente con helado de vainilla" price="6,00€" />
+        <MenuItem img="/assets/postre4.avif" imgAlt="Flan casero con caramelo" title="Flan Casero" description="Flan tradicional con caramelo líquido hecho en casa" price="5,00€" />
+        <MenuItem img="/assets/postre5.avif" imgAlt="Tarta de chocolate negro con fresas" title="Tarta de Chocolate" description="Tarta de chocolate negro con ganache y decoración de fresas" price="7,50€" />
+        <MenuItem img="/assets/postre6.webp" imgAlt="Crema catalana con azúcar caramelizado" title="Crema Catalana" description="Crema catalana tradicional con azúcar caramelizado" price="5,50€" />
       </section>
     </>
   )
