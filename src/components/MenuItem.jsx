@@ -1,7 +1,14 @@
 import { useState } from 'react'
+import { useCart } from '../context/CartContext'
 
 function MenuItem({ img, imgAlt, title, description, price }) {
   const [quantity, setQuantity] = useState(1)
+  const { addToCart } = useCart()
+
+  const handleAdd = () => {
+    addToCart({ title, price, quantity })
+    setQuantity(1)
+  }
 
   return (
     <div className="menu-item">
@@ -20,7 +27,7 @@ function MenuItem({ img, imgAlt, title, description, price }) {
             <span className="quantity-display">{quantity}</span>
             <button className="quantity-btn plus-btn" onClick={() => setQuantity(q => q + 1)}>+</button>
           </div>
-          <button className="add-to-cart">Añadir</button>
+          <button className="add-to-cart" onClick={handleAdd}>Añadir</button>
         </div>
       </div>
     </div>

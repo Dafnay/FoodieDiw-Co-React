@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://foodiediw-co.netlify.app/sitemap.xml
+
