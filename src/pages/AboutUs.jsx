@@ -3,6 +3,9 @@ import ImageTextSection from '../components/shared/ImageTextSection'
 function AboutUs() {
   return (
     <>
+      <section className="menu-header">
+        <h1>Sobre Nosotros</h1>
+      </section>
       <ImageTextSection
         img="/assets/team-hands.avif"
         imgAlt="Nuestra cocina"

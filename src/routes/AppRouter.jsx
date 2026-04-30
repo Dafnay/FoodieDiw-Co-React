@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { CartProvider } from '../context/CartContext.jsx'
 import App from '../App.jsx'
 import Home from '../pages/Home.jsx'
 import AboutUs from '../pages/AboutUs.jsx'
@@ -13,6 +14,7 @@ import Drinks from '../pages/Drinks.jsx'
 function AppRouter() {
   return (
     <BrowserRouter>
+      <CartProvider>
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
@@ -26,6 +28,7 @@ function AppRouter() {
           <Route path="drinks" element={<Drinks />} />
         </Route>
       </Routes>
+      </CartProvider>
     </BrowserRouter>
   )
 }

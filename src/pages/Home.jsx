@@ -8,7 +8,7 @@ function Home() {
   return (
     <>
       <section className="banner">
-        <img src="/assets/banner.avif" alt="Banner" className="banner-img" width="1066" height="400" />
+        <img src="/assets/banner.avif" alt="Platos del restaurante Foodie Diw&Co en Oviedo, Asturias" className="banner-img" width="1066" height="400" />
         <div className="banner-text">
           <h1>Descubre los mejores sabores en un solo lugar</h1>
         </div>
