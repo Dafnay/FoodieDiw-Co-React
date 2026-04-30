@@ -23,55 +23,80 @@
     gap: 15px;
 }
 
-.faq-item {
+/* Sobreescritura de Bootstrap accordion */
+.accordion-item.faq-item {
     background: #fff;
     border: 1px solid #e0e0e0;
-    border-radius: 8px;
+    border-radius: 8px !important;
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: box-shadow 0.3s ease;
 }
 
-.faq-item:hover {
+.accordion-item.faq-item:hover {
     box-shadow: 0 4px 12px #0000001a;
 }
 
-.faq-question {
+.accordion-button.faq-question {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 25px;
-    cursor: pointer;
-    user-select: none;
     background: #f8f9fa;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: inherit;
+    box-shadow: none;
+    border-radius: 0 !important;
     transition: background 0.3s ease;
 }
 
-.faq-question:hover {
+.accordion-button.faq-question:hover {
     background: #e9ecef;
 }
 
-.faq-question h3 {
-    margin: 0;
-    font-size: 1.15rem;
-    font-weight: 600;
+.accordion-button.faq-question:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+/* Ocultar el chevron por defecto de Bootstrap */
+.accordion-button.faq-question::after {
+    display: none;
+}
+
+.accordion-button.faq-question:not(.collapsed) {
+    background: #f8f9fa;
+    color: inherit;
+    box-shadow: none;
 }
 
 .faq-icon {
     font-size: 1.2rem;
     transition: transform 0.3s ease;
+    flex-shrink: 0;
 }
 
-.faq-item.active .faq-icon {
+.accordion-button.faq-question:not(.collapsed) .faq-icon {
     transform: rotate(180deg);
 }
 
-.faq-answer {
-    display: none;
+/* Animación de dropdown */
+.accordion-collapse {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.35s ease;
+}
+
+.accordion-collapse.show {
+    max-height: 300px;
+}
+
+.accordion-body.faq-answer {
     padding: 0 25px 20px 25px;
     background: #fff;
 }
 
-.faq-answer p {
+.accordion-body.faq-answer p {
     margin: 15px 0 0 0;
     line-height: 1.6;
     font-size: 1rem;
@@ -86,19 +111,16 @@
         font-size: 1rem;
     }
 
-    .faq-question {
+    .accordion-button.faq-question {
         padding: 15px 20px;
-    }
-
-    .faq-question h3 {
         font-size: 1rem;
     }
 
-    .faq-answer {
+    .accordion-body.faq-answer {
         padding: 0 20px 15px 20px;
     }
 
-    .faq-answer p {
+    .accordion-body.faq-answer p {
         font-size: 0.95rem;
     }
 }
