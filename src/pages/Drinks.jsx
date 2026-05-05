@@ -1,7 +1,9 @@
+import { useEffect } from 'react'
 import MenuItem from '../components/MenuItem'
 import MenuCategoryNav from '../components/MenuCategoryNav'
 
 function Drinks() {
+  useEffect(() => { document.title = 'Bebidas | Foodie Diw&Co' }, [])
   return (
     <>
       <section className="menu-header">

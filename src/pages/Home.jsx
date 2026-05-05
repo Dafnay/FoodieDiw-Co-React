@@ -1,14 +1,22 @@
-import { lazy, Suspense } from 'react'
+import { lazy, Suspense, useEffect } from 'react'
 import CategoryBubble from '../components/CategoryBubble'
 import ImageTextSection from '../components/shared/ImageTextSection'
+import Slider from '../components/shared/Slider'
 
 const Map = lazy(() => import('../components/shared/Map'))
 
 function Home() {
+  useEffect(() => { document.title = 'Inicio | Foodie Diw&Co' }, [])
   return (
     <>
-      <section className="banner">
-        <img src="/assets/banner.avif" alt="Platos del restaurante Foodie Diw&Co en Oviedo, Asturias" className="banner-img" width="1066" height="400" />
+      {/* Slider visible en SM+ */}
+      <div className="d-none d-sm-block">
+        <Slider />
+      </div>
+
+      {/* Banner estático visible solo en XS */}
+      <section className="banner d-sm-none">
+        <img src="/assets/banner.avif" alt="Platos del restaurante Foodie Diw&Co en Oviedo, Asturias" className="banner-img" width="1066" height="300" />
         <div className="banner-text">
           <h1>Descubre los mejores sabores en un solo lugar</h1>
         </div>

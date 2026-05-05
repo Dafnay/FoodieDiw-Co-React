@@ -1,6 +1,8 @@
+import { useEffect } from 'react'
 import ImageTextSection from '../components/shared/ImageTextSection'
 
 function AboutUs() {
+  useEffect(() => { document.title = 'Sobre Nosotros | Foodie Diw&Co' }, [])
   return (
     <>
       <section className="menu-header">
