@@ -1,8 +1,10 @@
-import ContactHeader from '../components/contact/ContactHeader'                                                                                                                                                                                                                                      
-  import ContactForm from '../components/contact/ContactForm'                                                                                                                                                                                                                                          
-  import ContactInfoCard from '../components/contact/ContactInfoCard'
-                                                                                                                                                                                                                                                                                                       
-  function Contact() {
+import { useEffect } from 'react'
+import ContactHeader from '../components/contact/ContactHeader'
+import ContactForm from '../components/contact/ContactForm'
+import ContactInfoCard from '../components/contact/ContactInfoCard'
+
+function Contact() {
+  useEffect(() => { document.title = 'Contacto | Foodie Diw&Co' }, [])
     return (
       <section className="contact-wrapper">
         <ContactHeader />                                                                                                                                                                                                                                                                              

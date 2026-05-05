@@ -1,7 +1,9 @@
+import { useEffect } from 'react'
 import MenuItem from '../components/MenuItem'
 import MenuCategoryNav from '../components/MenuCategoryNav'
 
 function Mains() {
+  useEffect(() => { document.title = 'Platos Principales | Foodie Diw&Co' }, [])
   return (
     <>
       <section className="menu-header">

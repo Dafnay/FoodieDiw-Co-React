@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const faqs = [
   {
@@ -34,6 +34,7 @@ const faqs = [
 ]
 
 function Faqs() {
+  useEffect(() => { document.title = 'Preguntas Frecuentes | Foodie Diw&Co' }, [])
   const [activeId, setActiveId] = useState(null)
 
   const toggle = (id) => setActiveId(prev => prev === id ? null : id)

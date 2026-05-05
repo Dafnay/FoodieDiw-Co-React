@@ -4,6 +4,7 @@ import { useCart } from '../context/CartContext'
 const fmt = (num) => num.toFixed(2).replace('.', ',') + '€'
 
 function Cart() {
+  useEffect(() => { document.title = 'Mi Carrito | Foodie Diw&Co' }, [])
   const { items, removeFromCart, updateQuantity, clearCart, subtotal, shipping, total } = useCart()
   const clearDialogRef = useRef(null)
   const checkoutDialogRef = useRef(null)
