@@ -1,16 +1,11 @@
 import { Outlet } from 'react-router-dom'
-import Navbar from './components/shared/Navbar'
-import Footer from './components/shared/Footer'
+import { AppLayout } from './layout/AppLayout'
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <main className="content">
-        <Outlet />
-      </main>
-      <Footer />
-    </>
+    <AppLayout>
+      <Outlet />
+    </AppLayout>
   )
 }
 
